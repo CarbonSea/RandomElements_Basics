@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var askButtonPressed: UIButton!
-        
-
+    var ballArrays = [#imageLiteral(resourceName: "ball5"), #imageLiteral(resourceName: "ball5") , #imageLiteral(resourceName: "ball3") , #imageLiteral(resourceName: "ball1") ]
+    
+    imageView.image = ballArrays.randomElement()
     
     
     override func viewDidLoad() {
